@@ -1,0 +1,7 @@
+﻿Fitbit uses a sampling size of 100Hz
+
+Their code is written in JS which is faster than python.
+
+New approach: how quickly can I collect data? Distance/velocity can be determined in post processing.
+
+What information will I lose via averaging to Nyquist sampling theorem?

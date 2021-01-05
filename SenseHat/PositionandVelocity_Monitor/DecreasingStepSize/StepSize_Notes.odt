@@ -1,0 +1,34 @@
+﻿On the Influence of Step Size on Positional Drift
+
+For these test, we are only concerned with drift along the z axis.
+
+We will not use any averaging techniques to minimize error. We will simply experiment with deviating the step-size (dt) and measure the error after 10 seconds.
+
+Experiment 1
+
+After running the experiment twice at 21 distinct values for dt, we can not conclude there is an inverse  relationship between step-size and positional dift. In fact, the time required to run this algorithm more than doubled the time interval for the rounds with a smaller dt.
+
+Experiment 2
+
+When dt=0.005, each round took over 50 seconds!
+
+Dt = 0.025 takes just under 20
+
+This code takes approximately 0.02 s per step to execute
+
+This code was heavily optimized to only save and record the final velocity and position values (as opposed to appending a list every step). 
+
+As before, we did not find an inverse relationship between step size and positional drift for dt <0.095 s when the board is static.
+
+But there was significant computation delay.
+
+
+Conclusion:
+No benefit for step-size below 0.1 s.
+
+Unless the code’s run time can be improved, the computational drift per step is way too large. Without any improvements, a step-size below 0.02s is not even  achievable.
+
+This must either be compensated for by adjusting time.sleep() and/or increasing the step size.
+
+
+ 

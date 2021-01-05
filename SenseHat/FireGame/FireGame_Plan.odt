@@ -1,0 +1,8 @@
+﻿    • There are blocks on the top of the screen which need to be broken.
+    • You are a dot on the bottom of the screen.
+        ◦ Move side to side
+        ◦ charge (hold down)
+        ◦ shoot (up)
+    • Charging builds up fireball level. Upon contact, the fireball splits into weaker pieces (that can only collide with blocks, wall or player. 
+    • They continue to bounce around until absorbed.
+
